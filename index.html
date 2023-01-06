@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="htmlForm" action="https://account.accurate.id/oauth/authorize" method="POST">
+        <div>
+            <label for="">Client ID</label>
+            <input id="client_id" name="client_id">
+        </div>
+        <div>
+            <label for="">Response Type</label>
+            <input id="response_type" name="response_type">
+        </div>
+        <div>
+            <label for="">URL OAuth Callback</label>
+            <input id="redirect_uri" name="redirect_uri">
+        </div>
+        <div>
+            <label for="">Scope</label>
+            <input id="scope" name="scope">
+        </div>
+        <button type="submit" id="btn-sub" @click="fetchTitle">Submit</button>
+    </form>
+</body>
+</html>
